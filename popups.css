@@ -13,8 +13,8 @@
 
 .popup-content {
     background-color: #fff;
-    padding: 20px;
-    max-width: 400px;
+    padding: 5vmin;
+    max-width: 60vmin;
     text-align: center;
     color: #000;
     border-radius: 1em;
