@@ -1,55 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 @media only screen and (max-width: 500px) {
-  body {
+  #main {
     padding-right: 5%;
     padding-left: 5%;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 500px) {
-  body {
+  #main {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
-  body {
+  #main {
     padding-right: 15%;
     padding-left: 15%;
   }
 }
 @media only screen and (max-width: 1300px) and (min-width: 1000px) {
-  body {
+  #main {
     padding-right: 20%;
     padding-left: 20%;
   }
 }
 @media only screen and (max-width: 1600px) and (min-width: 1300px) {
-  body {
+  #main {
     padding-right: 25%;
     padding-left: 25%;
   }
 }
 @media only screen and (max-width: 1900px) and (min-width: 1600px) {
-  body {
+  #main {
     padding-right: 30%;
     padding-left: 30%;
   }
 }
 @media only screen and (max-width: 2200px) and (min-width: 1900px) {
-  body {
+  #main {
     padding-right: 35%;
     padding-left: 35%;
   }
 }
 @media only screen and (min-width: 2200px) {
-  body {
+  #main {
     padding-right: 30%;
     padding-left: 30%;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  img {
-    width: 70% !important;
   }
 }
 body,
@@ -116,9 +111,6 @@ select option,
 input:focus {
   outline: none;
 }
-img {
-  width: 100%;
-}
 figcaption {
   text-align: center;
   margin-top: 0.5em;
@@ -128,6 +120,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 mark {
   padding: 0 0.1em;
@@ -190,4 +183,18 @@ del {
 h3 time {
   color: #999;
   font-style: italic;
+}
+#banner {
+  z-index: -1;
+  padding: 0;
+  margin: -1em;
+  border-radius: 0;
+  overflow: hidden;
+}
+#banner-container {
+  width: 130%;
+  height: 20%;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-2em) translateY(-1em);
 }
