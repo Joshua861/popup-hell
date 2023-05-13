@@ -22,6 +22,4 @@
 .close, .close:hover {
     display: inline;
     background-color: #0000;
-    width: 1em;
-    height: 1em;
 }

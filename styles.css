@@ -187,3 +187,7 @@ del {
   background-color: #d33;
   padding: 0 .15em;
 }
+h3 time {
+  color: #999;
+  font-style: italic;
+}
