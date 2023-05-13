@@ -85,12 +85,45 @@ cookies_submit.addEventListener('click', closeMoreCookiesMenu);
 var video = document.getElementById('video');
 
 function showVideo() {
+    more_cookies.style.display = 'none';
     video.style.display = 'flex';
 }
 
 function closeMoreCookiesMenu() {
-    more_cookies.style.display = 'none';
-    showVideo();
+    document.getElementById('mcc').innerHTML = "<h1>Are you sure you don't just want to enable all of the cookies?<h/1><br><br><button id='yes'>i have no friends and hate cookies</button><button id='no'>Nah, I want all the cookies becuase I am very cool! 😎</button>";
+    document.getElementById('no').addEventListener('click', showVideo);
+    document.getElementById('yes').addEventListener('click', usure);
+}
+
+function usure() {
+    document.getElementById('mcc').innerHTML = `
+    <h1>Are you sure you want to do this?</h1>
+    <h3>I wouldn't if I were you.</h3>
+    <h4>(we know where you live)
+    <br><br>
+    <button id='emo'>Yes, I am resigned to my fate.</button>
+    <button id='help-me'>Is it too late to go back?</button>
+    `;
+    document.getElementById('help-me').addEventListener('click', goBack);
+    document.getElementById('emo').addEventListener('click', threat);
+}
+function goBack() {
+    document.getElementById('mcc').innerHTML = `
+    <h1>Good, you may return.</h1>
+    <br><br>
+    <button id="show-video">Thank you my lord</button>
+    `;
+    document.getElementById('show-video').addEventListener('click', showVideo);
+}
+
+function threat() {
+    document.getElementById('mcc').innerHTML = `
+    <h1>Uh oh</h1>
+    <h2>Insert scary thing here</h2>
+    <br><br>
+    <button id="oh-no">Oh, the horror! I had better close this popup!</button>
+    `
+    document.getElementById('oh-no').addEventListener('click', showVideo);
 }
 
 sub_pnum.addEventListener('click', closePnum);
@@ -123,12 +156,11 @@ function resend() {
     <h1>Please verify your phone number.</h1>
     <h3>GET IT RIGHT THIS TIME!</h3>
     <br>
-    <label for="pnum">YOUR NUMBER: </label>
+    <label for="pnum">YOUR FUCKING CODE: </label>
     <input id="pnum" type="text">
     <input style="display: inline;" type="submit" id="resubmit-code">
     <br><br>
     <footer>Customer support will never ask for your code.</footer>`;
-
     document.getElementById('resubmit-code').addEventListener('click', resubmit);
 }
 
