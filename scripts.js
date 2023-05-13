@@ -55,13 +55,28 @@ function acceptCookies() {
     // Perform actions for accepting cookies
     console.log("Cookies accepted");
     closeCookies();
-    moreCookies();
+    showVideo();
 }
 
 var cookies_submit = document.getElementById('cookies-submit');
 
-closeMoreCookies.addEventListener('click', closeMoreCookiesMenu);
+cookies_submit.addEventListener('click', closeMoreCookiesMenu);
+
+var video = document.getElementById('video');
+
+function showVideo() {
+    video.style.display = 'flex';
+}
 
 function closeMoreCookiesMenu() {
     more_cookies.style.display = 'none';
+    showVideo()
+}
+
+var close_video = document.getElementById('close-video')
+
+close_video.addEventListener('click', hideVideo);
+
+function hideVideo () {
+    video.style.display = 'none';
 }
