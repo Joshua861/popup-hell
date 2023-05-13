@@ -1,3 +1,11 @@
+var main = document.getElementById('main');
+
+function sike() {
+    setTimeout(function () {
+        main.innerHTML = "<h1 id='sorry'>Sorry this website doesn't support your browser.</h1><br><img src='sorry.png'>"
+    }, 5000);
+}
+
 // Function to close the popup
 function closeNews() {
     document.getElementById('newsletterPopup').style.display = 'none';
@@ -77,6 +85,7 @@ var close_video = document.getElementById('close-video')
 
 close_video.addEventListener('click', hideVideo);
 
-function hideVideo () {
+function hideVideo() {
     video.style.display = 'none';
+    sike();
 }
