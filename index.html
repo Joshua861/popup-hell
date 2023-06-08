@@ -1,168 +1,258 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="popups.css">
-
-</head>
-
-<body>
-    <div class="popup-overlay" id="newsletterPopup">
-        <div class="popup-content">
-            <h1>Sign up for our newsletter!</h1>
-            <label for="email">Your email address:</label>
-            <input id="email" type="text">
-            <br>
-            <br>
-            <button id="email-submit">Submit</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="popups.css">
+    </head>
+    <body>
+        <noscript>
+            <div
+                style="width: 100vw; height: 100vh; background-color: black;         display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;">
+                <h1>This site
+                    requires
+                    javascript</h1>
+            </div>
+        </noscript>
+        <div class="popup-content" id="tl">
+            <h2>Filip is in your area.</h2><video id="filip"
+                src="filip/video 1.mp4" type="video/mp4" controls
+                style="width: 20vw; height: auto;"></video>
         </div>
-    </div>
-    <div class="popup-overlay" id="cookies">
-        <div class="popup-content">
-            <h1>Would you like to enable cookies?</h1>
-            <br>
-            <br>
-            <button id="yes-cookies">YES!!! I LOVE COOKIES 🍪</button>
-            <button id="no-cookies">Hmm... please, tell me more.</button>
+        <div class="popup-content" id="br">
+            <h3>Filip</h3>
+            <img src="filip/photo 2.jpg" style="width: 20vw; height: auto;">
         </div>
-    </div>
-    <div class="popup-overlay" id="more-cookies">
-        <div class="popup-content" id="mcc">
-            <h1>Which cookies would you like?</h1>
-            <br>
-            <br>
-            <label for="1">Tracking: </label>
-            <input type="checkbox" checked id="1">
-            <br>
-            <label for="2">Ads: </label>
-            <input type="checkbox" checked id="2">
-            <br>
-            <label for="3">Microphone: </label>
-            <input type="checkbox" checked id="3">
-            <br>
-            <label for="4">Camera: </label>
-            <input type="checkbox" checked id="4">
-            <br>
-            <label for="5">More tracking: </label>
-            <input type="checkbox" checked id="5">
-            <br>
-            <label for="6">Location: </label>
-            <input type="checkbox" checked id="6">
-            <br>
-            <label for="7">Fingerprinting: </label>
-            <input type="checkbox" checked id="7">
-            <br>
-            <label for="8">More ads: </label>
-            <input type="checkbox" checked id="8">
-            <br>
-            <label for="9">Feet pics: </label>
-            <input type="checkbox" checked id="9">
-            <br>
-            <label for="10">Passwords: </label>
-            <input type="checkbox" checked id="10">
-            <br><br>
-            <button id="cookies-submit">Ok</button>
+        <div class="popup-overlay" id="newsletterPopup">
+            <div class="popup-content">
+                <h1>Sign up for our newsletter!</h1>
+                <label for="email">Your email address:</label>
+                <input id="email" type="text">
+                <br>
+                <br>
+                <button id="email-submit">Submit</button>
+            </div>
         </div>
-    </div>
-    <div class="popup-overlay" id="video">
-        <div class="popup-content">
-            <button id="close-video" class="close"><svg xmlns="http://www.w3.org/2000/svg" height="48"
-                    viewBox="0 96 960 960" width="48">
-                    <path
-                        d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                </svg></button>
-            <h1 style="display: inline;">
-                Check out our latest video!
-            </h1>
-            <iframe style="align-items: center; width: 100%; height: fit-content;" width="560" height="315"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+        <div class="popup-overlay" id="cookies">
+            <div class="popup-content">
+                <h1>Would you like to enable cookies?</h1>
+                <br>
+                <br>
+                <button id="yes-cookies">YES!!! I LOVE COOKIES 🍪</button>
+                <button id="no-cookies">Hmm... please, tell me more.</button>
+            </div>
         </div>
-    </div>
-    <div class="popup-overlay" id="pnum">
-        <div class="popup-content" id="pnum-content">
-            <h1>Please enter your phone number.</h1>
-            <br>
-            <label for="pnum">Phone number: </label>
-            <input id="pnum" type="text">
-            <input style="display: inline;" type="submit" id="submit-pnum">
+        <div class="popup-overlay" id="more-cookies">
+            <div class="popup-content" id="mcc">
+                <h1>Which cookies would you like?</h1>
+                <br>
+                <br>
+                <label for="1">Tracking: </label>
+                <input type="checkbox" checked id="1">
+                <br>
+                <label for="2">Ads: </label>
+                <input type="checkbox" checked id="2">
+                <br>
+                <label for="3">Microphone: </label>
+                <input type="checkbox" checked id="3">
+                <br>
+                <label for="4">Camera: </label>
+                <input type="checkbox" checked id="4">
+                <br>
+                <label for="5">More tracking: </label>
+                <input type="checkbox" checked id="5">
+                <br>
+                <label for="6">Location: </label>
+                <input type="checkbox" checked id="6">
+                <br>
+                <label for="7">Fingerprinting: </label>
+                <input type="checkbox" checked id="7">
+                <br>
+                <label for="8">More ads: </label>
+                <input type="checkbox" checked id="8">
+                <br>
+                <label for="9">Feet pics: </label>
+                <input type="checkbox" checked id="9">
+                <br>
+                <label for="10">Passwords: </label>
+                <input type="checkbox" checked id="10">
+                <br><br>
+                <button id="cookies-submit">Ok</button>
+            </div>
         </div>
-    </div>
-    <div class="popup-overlay" id="verify-pnum">
-        <div class="popup-content" id="vpc">
-            <h1>Please verify your phone number.</h1>
-            <h3>We have sent a 6 digit code to your phone number.</h3>
-            <br>
-            <label for="pnum">Code: </label>
-            <input id="pnum" type="text">
-            <input style="display: inline;" type="submit" id="submit-code">
-            <br><br>
-            <footer>Customer support will never ask for your code.</footer>
+        <div class="popup-overlay" id="video">
+            <div class="popup-content">
+                <button id="close-video" class="close"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="48"
+                        viewBox="0 96 960 960" width="48">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></button>
+                <h1 style="display: inline;">
+                    Check out our latest video!
+                </h1>
+                <iframe
+                    style="align-items: center; width: 100%; height: fit-content;"
+                    width="560" height="315"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
-    <div id="banner-container">
-        <figure>
-            <img src="banner.jpg" id="banner">
-        </figure>
-    </div>
-    <div id="main">
-        <footer style="font-size: .5em; color: #999;">
-            Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/photos/bk4vuZAJNqM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </footer>
-        <h1 id="main-title">Lorem Ipsum</h1>
-        <h3><time>1 April 2020</time></h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec dui nec lacus ornare pulvinar. Interdum et
-            malesuada fames ac ante ipsum <b>primis</b> in faucibus. Etiam augue urna, ultrices viverra arcu non,
-            lobortis
-            fermentum dui. <b>Aenean</b> eget auctor augue. Duis ac enim ac ante dictum convallis. In ultrices nisl eu
-            fringilla
-            accumsan. Morbi convallis turpis non orci posuere, sed mattis libero ullamcorper. Sed ac tempor lorem.
-            Mauris
-            sed ligula eget ipsum molestie commodo nec ut nulla. In hendrerit mattis sapien vel gravida. Nam vitae leo
-            suscipit, sodales nulla in, fringilla nibh. Maecenas neque tellus, porta eu dolor ut, bibendum lacinia nisl.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br>
-            In scelerisque, tortor eu egestas commodo, libero nulla luctus justo, at gravida tellus diam in quam. In hac
-            habitasse platea dictumst. Donec id dui at orci blandit congue. In efficitur, augue a fermentum tempor,
-            justo
-            elit dapibus metus, quis porttitor felis justo eu erat. Nulla facilisi. Morbi pellentesque lectus tempus,
-            sagittis est nec, cursus felis. Morbi porta accumsan nulla ac vehicula. <br><br>
-        <blockquote>
-            Morbi lorem tellus, efficitur at nulla eu, tincidunt scelerisque ipsum. Quisque pharetra rhoncus
-            sapien, id gravida lacus facilisis eget. Pellentesque dui quam, mollis a pellentesque sed, feugiat eu augue.
-        </blockquote>
-        Etiam aliquam dictum nibh lacinia ultricies. Cras tristique tristique tempus. In cursus eleifend erat nec
-        laoreet. Pellentesque tellus elit, posuere nec ultrices ac, lobortis ornare ante. Vestibulum feugiat nec quam a
-        suscipit. Morbi lorem tellus, efficitur at nulla eu, tincidunt scelerisque ipsum. Quisque pharetra rhoncus
-        sapien, id gravida lacus facilisis eget. Pellentesque dui quam, mollis a pellentesque sed, feugiat eu augue.
-        <br><br>
-        Suspendisse nisi lectus, efficitur iaculis ornare nec, sagittis nec odio. Etiam ac massa fringilla, suscipit
-        lorem nec, egestas ante. <i>Integer quis eleifend lorem, ut sollicitudin massa.</i> Sed suscipit, nisl at tempor
-        tincidunt, elit lectus ornare nulla, a aliquet magna nulla at mi. Phasellus accumsan ante vel felis pellentesque
-        efficitur. Donec a mauris velit. Ut suscipit nulla porta dui placerat gravida. Ut ultricies ut mauris vel
-        vulputate. <br><br>
-        <figure>
-            <img src="image.jpg" alt="Rolling hills">
-            <figcaption>
+        <div class="popup-overlay" id="pnum">
+            <div class="popup-content" id="pnum-content">
+                <h1>Please enter your phone number.</h1>
+                <br>
+                <label for="pnum">Phone number: </label>
+                <input id="pnum" type="text">
+                <input style="display: inline;" type="submit"
+                    id="submit-pnum">
+            </div>
+        </div>
+        <div class="popup-overlay" id="verify-pnum">
+            <div class="popup-content" id="vpc">
+                <h1>Please verify your phone number.</h1>
+                <h3>We have sent a 6 digit code to your phone number.</h3>
+                <br>
+                <label for="pnum">Code: </label>
+                <input id="pnum" type="text">
+                <input style="display: inline;" type="submit"
+                    id="submit-code">
+                <br><br>
+                <footer>Customer support will never ask for your code.</footer>
+            </div>
+        </div>
+        <div id="banner-container">
+            <figure>
+                <img src="banner.jpg" id="banner">
+            </figure>
+        </div>
+        <div id="main">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9903034731718614"
+                crossorigin="anonymous"></script>
+            <!-- Ads -->
+            <ins class="adsbygoogle"
+                style="display:absolute;top:50vw;left:5vw;"
+                data-ad-client="ca-pub-9903034731718614"
+                data-ad-slot="4816920550"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+       </script>
+            <footer style="font-size: .5em; color: #999;">
                 Photo by <a
-                    href="https://unsplash.com/es/@zetong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zetong
-                    Li</a> on <a
-                    href="https://unsplash.com/photos/AEYbdyOH2cU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </figcaption>
-        </figure>
-        Aliquam laoreet, enim et maximus condimentum, erat elit bibendum nunc, a posuere odio sem nec tortor. Nunc
-        imperdiet purus a ex congue lobortis. Sed magna ligula, consectetur nec elit eget, dignissim viverra tortor.
-        Aenean blandit imperdiet eros ut lacinia. Fusce sem augue, laoreet laoreet justo tincidunt, porttitor vulputate
-        massa. Ut imperdiet pharetra ex et elementum. Nunc eget ligula malesuada, fermentum nunc ut, convallis nisi.
-        <br><br>
-        </p>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-
+                    href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek
+                    Piwnicki</a> on <a
+                    href="https://unsplash.com/photos/bk4vuZAJNqM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </footer>
+            <h1 id="main-title">Lorem Ipsum</h1>
+            <h3><time>1 April 2020</time></h3>
+            <p id="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Cras
+                nec dui nec lacus ornare pulvinar. Interdum et
+                malesuada fames ac ante ipsum <b>primis</b> in faucibus.
+                Etiam
+                augue urna, ultrices viverra arcu non,
+                lobortis
+                fermentum dui. <b>Aenean</b> eget auctor augue. Duis ac
+                enim
+                ac
+                ante dictum convallis. In ultrices nisl eu
+                fringilla
+                accumsan. Morbi convallis turpis non orci posuere, sed
+                mattis
+                libero ullamcorper. Sed ac tempor lorem.
+                Mauris
+                sed ligula eget ipsum molestie commodo nec ut nulla. In
+                hendrerit mattis sapien vel gravida. Nam vitae leo
+                suscipit, sodales nulla in, fringilla nibh. Maecenas
+                neque
+                tellus, porta eu dolor ut, bibendum lacinia nisl.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br><br>
+                In scelerisque, tortor eu egestas commodo, libero nulla
+                luctus
+                justo, at gravida tellus diam in quam. In hac
+                habitasse platea dictumst. Donec id dui at orci blandit
+                congue.
+                In efficitur, augue a fermentum tempor,
+                justo
+                elit dapibus metus, quis porttitor felis justo eu erat.
+                Nulla
+                facilisi. Morbi pellentesque lectus tempus,
+                sagittis est nec, cursus felis. Morbi porta accumsan
+                nulla
+                ac
+                vehicula. <br><br>
+                <blockquote>
+                    Morbi lorem tellus, efficitur at nulla eu, tincidunt
+                    scelerisque ipsum. Quisque pharetra rhoncus
+                    sapien, id gravida lacus facilisis eget.
+                    Pellentesque
+                    dui
+                    quam, mollis a pellentesque sed, feugiat eu augue.
+                </blockquote>
+                Etiam aliquam dictum nibh lacinia ultricies. Cras
+                tristique
+                tristique tempus. In cursus eleifend erat nec
+                laoreet. Pellentesque tellus elit, posuere nec ultrices
+                ac,
+                lobortis ornare ante. Vestibulum feugiat nec quam a
+                suscipit. Morbi lorem tellus, efficitur at nulla eu,
+                tincidunt
+                scelerisque ipsum. Quisque pharetra rhoncus
+                sapien, id gravida lacus facilisis eget. Pellentesque
+                dui
+                quam,
+                mollis a pellentesque sed, feugiat eu augue.
+                <br><br>
+                Suspendisse nisi lectus, efficitur iaculis ornare nec,
+                sagittis
+                nec odio. Etiam ac massa fringilla, suscipit
+                lorem nec, egestas ante. <i>Integer quis eleifend lorem,
+                    ut
+                    sollicitudin massa.</i> Sed suscipit, nisl at tempor
+                tincidunt, elit lectus ornare nulla, a aliquet magna
+                nulla
+                at
+                mi. Phasellus accumsan ante vel felis pellentesque
+                efficitur. Donec a mauris velit. Ut suscipit nulla porta
+                dui
+                placerat gravida. Ut ultricies ut mauris vel
+                vulputate. <br><br>
+                <figure>
+                    <img src="image.jpg" alt="Rolling hills" id="image">
+                    <figcaption>
+                        Photo by <a
+                            href="https://unsplash.com/es/@zetong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zetong
+                            Li</a> on <a
+                            href="https://unsplash.com/photos/AEYbdyOH2cU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                Aliquam laoreet, enim et maximus condimentum, erat elit
+                bibendum
+                nunc, a posuere odio sem nec tortor. Nunc
+                imperdiet purus a ex congue lobortis. Sed magna ligula,
+                consectetur nec elit eget, dignissim viverra tortor.
+                Aenean blandit imperdiet eros ut lacinia. Fusce sem
+                augue,
+                laoreet laoreet justo tincidunt, porttitor vulputate
+                massa. Ut imperdiet pharetra ex et elementum. Nunc eget
+                ligula
+                malesuada, fermentum nunc ut, convallis nisi.
+                <br><br>
+            </p>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
 </html>
