@@ -191,3 +191,6 @@ tl = document.getElementById('tl')
 function philip () {
   tl.style.display = inline - block
 }
+$(function () {
+  $('.popup-content').draggable()
+})
