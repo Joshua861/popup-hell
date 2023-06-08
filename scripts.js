@@ -28,6 +28,7 @@ function closeNews () {
 // Event listener for the page load event
 window.addEventListener('load', function () {
   document.getElementById('newsletterPopup').style.display = 'flex'
+  init()
 })
 
 var email_submit = document.getElementById('email-submit')
