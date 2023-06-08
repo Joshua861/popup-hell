@@ -13,6 +13,7 @@ function hidePnum () {
 }
 
 function sike () {
+  document.getElementById('verify-pnum').style.display = 'none'
   setTimeout(function () {
     main.innerHTML =
       "<h1 id='sorry'>Sorry this website doesn't support your browser.</h1><br><img src='sorry.png'>"
@@ -179,13 +180,25 @@ function resubmit () {
   setTimeout(function () {
     document.getElementById('vpc').innerHTML = `
     <h1>Did you hear about Filip?</h1>
-<img src="filip/photo 3.jpg" style="height: 40vw;>
-<button>Tell me more!</button>
+<img src="filip/photo 3.jpg" style="height: 40vw;">
+<br>
+<button id="tmm">Tell me more!</button>
     `
-    document.getElementById('resubmit-code').addEventListener('click', resubmit)
+    document.getElementById('tmm').addEventListener('click', tellMeMore)
   }, 2000)
 }
 
+function tellMeMore () {
+  document.getElementById('vpc').innerHTML = `
+    <h1>Filip</h1>
+<img src="filip/photo 3.jpg" style="height: 40vw;">
+<br>
+<p>Filip is a top g, love that guy, he just needs to take a touch.</p>
+<br>
+<button id="done">Ok just take me to the website now.</button>
+    `
+  document.getElementById('done').addEventListener('click', sike)
+}
 tl = document.getElementById('tl')
 
 function philip () {
@@ -194,3 +207,39 @@ function philip () {
 $(function () {
   $('.popup-content').draggable()
 })
+function touchHandler (event) {
+  var touch = event.changedTouches[0]
+
+  var simulatedEvent = document.createEvent('MouseEvent')
+  simulatedEvent.initMouseEvent(
+    {
+      touchstart: 'mousedown',
+      touchmove: 'mousemove',
+      touchend: 'mouseup'
+    }[event.type],
+    true,
+    true,
+    window,
+    1,
+    touch.screenX,
+    touch.screenY,
+    touch.clientX,
+    touch.clientY,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null
+  )
+
+  touch.target.dispatchEvent(simulatedEvent)
+  event.preventDefault()
+}
+
+function init () {
+  document.addEventListener('touchstart', touchHandler, true)
+  document.addEventListener('touchmove', touchHandler, true)
+  document.addEventListener('touchend', touchHandler, true)
+  document.addEventListener('touchcancel', touchHandler, true)
+}
