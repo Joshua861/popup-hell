@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 var email_submit = document.getElementById('email-submit')
 
 // Add event listener to the button
-email_submit.addEventListener('click', submit_email)
+email_submit.addEventListener('vclick', submit_email)
 
 function submit_email () {
   closeNews()
@@ -62,12 +62,12 @@ function moreCookies () {
 }
 
 // Add event listener to the button
-c_yes.addEventListener('click', acceptCookies)
+c_yes.addEventListener('vclick', acceptCookies)
 
 var c_no = document.getElementById('no-cookies')
 
 // Add event listener to the button
-c_no.addEventListener('click', declineCookies)
+c_no.addEventListener('vclick', declineCookies)
 
 function declineCookies () {
   // Perform actions for declining cookies
@@ -86,7 +86,7 @@ function acceptCookies () {
 
 var cookies_submit = document.getElementById('cookies-submit')
 
-cookies_submit.addEventListener('click', closeMoreCookiesMenu)
+cookies_submit.addEventListener('vclick', closeMoreCookiesMenu)
 
 var video = document.getElementById('video')
 
@@ -98,8 +98,8 @@ function showVideo () {
 function closeMoreCookiesMenu () {
   document.getElementById('mcc').innerHTML =
     "<h1>Are you sure you don't just want to enable all of the cookies?<h/1><br><br><button id='yes'>i have no friends and hate cookies</button><button id='no'>Nah, I want all the cookies becuase I am very cool! 😎</button>"
-  document.getElementById('no').addEventListener('click', showVideo)
-  document.getElementById('yes').addEventListener('click', usure)
+  document.getElementById('no').addEventListener('vclick', showVideo)
+  document.getElementById('yes').addEventListener('vclick', usure)
 }
 
 function usure () {
@@ -111,8 +111,8 @@ function usure () {
     <button id='emo'>Yes, I am resigned to my fate.</button>
     <button id='help-me'>Is it too late to go back?</button>
     `
-  document.getElementById('help-me').addEventListener('click', goBack)
-  document.getElementById('emo').addEventListener('click', threat)
+  document.getElementById('help-me').addEventListener('vclick', goBack)
+  document.getElementById('emo').addEventListener('vclick', threat)
 }
 function goBack () {
   document.getElementById('mcc').innerHTML = `
@@ -120,7 +120,7 @@ function goBack () {
     <br><br>
     <button id="show-video">Thank you my lord</button>
     `
-  document.getElementById('show-video').addEventListener('click', showVideo)
+  document.getElementById('show-video').addEventListener('vclick', showVideo)
 }
 
 function threat () {
@@ -130,14 +130,14 @@ function threat () {
     <br><br>
     <button id="oh-no">Oh, the horror! I had better close this popup!</button>
     `
-  document.getElementById('oh-no').addEventListener('click', showVideo)
+  document.getElementById('oh-no').addEventListener('vclick', showVideo)
 }
 
-sub_pnum.addEventListener('click', closePnum)
+sub_pnum.addEventListener('vclick', closePnum)
 
 var close_video = document.getElementById('close-video')
 
-close_video.addEventListener('click', hideVideo)
+close_video.addEventListener('vclick', hideVideo)
 
 function hideVideo () {
   video.style.display = 'none'
@@ -154,12 +154,12 @@ function closePnum () {
 
 const subCode = document.getElementById('submit-code')
 
-subCode.addEventListener('click', submitCode)
+subCode.addEventListener('vclick', submitCode)
 
 function submitCode () {
   document.getElementById('vpc').innerHTML =
     "<h1>Sorry, that isn't right.</h1><br><button id='resend'>Send again?</button>"
-  document.getElementById('resend').addEventListener('click', resend)
+  document.getElementById('resend').addEventListener('vclick', resend)
 }
 
 function resend () {
@@ -172,7 +172,7 @@ function resend () {
     <input style="display: inline;" type="submit" id="resubmit-code">
     <br><br>
     <footer>Customer support will never ask for your code.</footer>`
-  document.getElementById('resubmit-code').addEventListener('click', resubmit)
+  document.getElementById('resubmit-code').addEventListener('vclick', resubmit)
 }
 
 function resubmit () {
@@ -185,7 +185,7 @@ function resubmit () {
 <br>
 <button id="tmm">Tell me more!</button>
     `
-    document.getElementById('tmm').addEventListener('click', tellMeMore)
+    document.getElementById('tmm').addEventListener('vclick', tellMeMore)
   }, 2000)
 }
 
@@ -198,7 +198,7 @@ function tellMeMore () {
 <br>
 <button id="done">Ok just take me to the website now.</button>
     `
-  document.getElementById('done').addEventListener('click', sike)
+  document.getElementById('done').addEventListener('vclick', sike)
 }
 tl = document.getElementById('tl')
 
